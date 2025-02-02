@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>School Website Design</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="info.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="menu">
+      <div class="menu-left">
+        <img src="favicon.png" alt="Logo" />
+      </div>
+      <ul class="menu-center">
+        <li><a class="home" href="index.html">Home</a></li>
+        <span class="separator">|</span>
+        <li><a href="info.html">Info</a></li>
+        <span class="separator">|</span>
+        <li><a href="news.html">News</a></li>
+      </ul>      
+      <ul class="menu-right">
+        <li id="login-btn"><a href="login.html">Login</a></li>
+        <li id="logout-btn" style="display: none;">
+          <a href="#" onclick="logout()">Logout</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <i class="fa fa-bars"></i>
+    </div>
+
+    <div class="mobileNav" id="mobileMenu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="info.html">Info</a></li>
+        <li><a href="news.html">News</a></li>
+        <li id="mobile-login"><a href="login.html">Login</a></li>
+        <li id="mobile-logout" style="display: none;">
+          <a href="#" onclick="logout()">Logout</a>
+        </li>
+      </ul>
+    </div>
+
+    <h1>Welcome to CICT Info Website</h1>
+    <script src="script.js"></script>
+  </body>
+</html>

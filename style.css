@@ -1,0 +1,141 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #1b263a;
+    margin: 0;
+    padding: 0;
+    color: #e07563;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #08122d;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+h1{
+  color: #e07563;
+  font-size: 45px;
+  font-family: "Lobster", serif;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.menu-center,
+.menu-right {
+  display: flex;
+  align-items: center;
+  list-style: none; /* Removes the dot */
+  padding: 0; /* Removes extra padding */
+  margin: 0; /* Removes extra margin */
+}
+
+.menu a {
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 27px;
+  color: white;
+  font-family: "Lobster", serif;
+}
+
+.menu a:hover {
+  background-color: #304377;
+  border-radius: 5px;
+  transition: ease-in-out 0.5s;
+}
+
+/* Separator styling */
+.separator {
+  color: #e07563; /* Applies the desired color */
+  margin: 0 10px; /* Adds spacing around the separator */
+  font-size: 18px;
+}
+
+
+.menu-left img {
+  width: 90px;
+  height: 85px;
+  object-fit: contain;
+}
+
+/* Login button styling */
+.menu-right #login-btn a {
+  background: #e07563;
+  padding-left: 15px; 
+  padding-right: 15px; 
+  padding-top: 12px; 
+  padding-bottom: 12px;
+  border-radius: 18px;
+  font-size: 27px;  
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  padding-left: 15px;
+}
+
+.menu-right #login-btn a:hover {
+  background: #c0594e;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Hamburger styling */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 25px; /* Adjusted top position for better centering */
+    right: 20px; /* Align to the right */
+}
+
+
+/* Mobile navigation */
+.mobileNav {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  width: 200px;
+  background-color: #181a18;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.mobileNav ul {
+  list-style: none; /* Removes the dot */
+  padding: 0; /* Removes extra padding */
+  margin: 0; /* Removes extra margin */
+  display: flex;
+  flex-direction: column;
+}
+
+.mobileNav li {
+  border-bottom: 1px solid #304377;
+}
+
+.mobileNav a {
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+.mobileNav a:hover {
+  background-color: #304377;
+}
+
+@media (max-width: 768px) {
+  .menu-center,
+  .menu-right {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
