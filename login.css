@@ -83,11 +83,12 @@ h2 {
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
-    transition: 0.3s;
+    transition: 1s;
 }
 
 .login-btn:hover {
     background: linear-gradient(135deg, #88d3ce, #6e45e2);
+    transition: 1s;
 }
 
 /* Responsive Design */

@@ -73,11 +73,13 @@ h1{
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
   padding-left: 15px;
+  transition: 0.5s;
 }
 
 .menu-right #login-btn a:hover {
   background: #c0594e;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
 }
 
 /* Hamburger styling */
