@@ -142,20 +142,22 @@ h1{
   }
 }
 
-* {
+/* LEGACY CODE: login.css | PLEASE FIX */
+
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
-}
+} */
 
-body {
+/* body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   background: linear-gradient(135deg, #6e45e2, #88d3ce);
-}
+} */
 
 .container {
   display: flex;
