@@ -1,0 +1,152 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./static/style.css">
+</head>
+<body>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full height of viewport */
+            background-color: #1e2a47; /* Dark blue background */
+            margin: 0;
+        }
+        /* Center the form container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    padding: 20px;
+}
+
+/* Adjust the form width */
+.form-box {
+    width: 90%; /* Adjust width for responsiveness */
+    max-width: 800px; /* Prevent it from becoming too wide */
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Make inputs full width */
+.form-box input,
+.form-box select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+        
+        label {
+            text-align: center;
+        }
+        .left-box {
+            width: 40%; /* Adjust if necessary */
+            padding: 30px;
+            background: linear-gradient(to bottom right, #ff7f50, #ff4500);
+            color: white;
+            text-align: center;
+        }
+        
+        .right-box {
+            width: 60%;
+            padding: 30px;
+        }
+        .radio-group {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap; /* Wraps on smaller screens */
+        }
+        
+        .radio-group label {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px; /* Space between radio button and text */
+            cursor: pointer; /* Makes it more user-friendly */
+        }
+         
+        
+    </style>
+    
+    <div class="container">
+        <div class="form-container, right">
+            <h1>Sign Up</h1>
+            <p>Create an account to get started</p>
+            <form>
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" placeholder="Enter your full name" required> <br><br>
+                
+                <label for="father-name">Father's Name</label>
+                <input type="text" id="father-name" placeholder="Enter your father's name" required> <br><br>
+                
+                <label for="mother-name">Mother's Name</label>
+                <input type="text" id="mother-name" placeholder="Enter your mother's name" required> <br><br>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required><br><br>
+                
+                <label for="class">Class</label>
+                <select id="class">
+                    <option value="">Select Class</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select> <br><br>
+                
+                <label>Version</label><br><br>
+                <div class="radio-group">
+                    <label><input type="radio" name="version" value="EV"> E.V</label>
+                    <label><input type="radio" name="version" value="BV"> B.V</label>
+                </div> <br><br>
+                
+                
+                <label for="phone">Parent's Phone Number</label>
+                <input type="text" id="phone" placeholder="Enter parent's phone number" required> <br><br>
+                
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" required> <br><br>
+
+                <label for="dobnumber">Birth Registration Number</label>
+                <input type="text" id="dobnumb" required> <br><br>
+
+                <label>Preferred Device</label><br><br>
+                <div class="radio-group">
+                    <label><input type="radio" name="mobile" value="mobile">Mobile</label>
+                    <label><input type="radio" name="messenger" value="messenger">Laptop </label>
+                    <label><input type="radio" name="discord" value="discord">Discord </label>
+                </div> <br><br>
+
+
+                <label>Preferred Medium Of Communication</label><br><br>
+                <div class="radio-group">
+                    <label><input type="radio" name="whatsapp" value="whatsapp">Whatsapp</label>
+                    <label><input type="radio" name="messenger" value="messenger">Messenger </label>
+                    <label><input type="radio" name="discord" value="discord">Discord </label>
+                </div> <br><br>
+                
+                <label for="address">Present Address</label>
+                <input type="text" id="address" placeholder="Enter your present address" required> <br><br>
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required> <br><br>
+                
+                <a class="login" href="login.html" style="text-align: center;" >login</a><br><br>
+            <button class="signup" >Sign Up</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
