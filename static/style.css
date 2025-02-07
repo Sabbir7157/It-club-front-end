@@ -248,8 +248,10 @@ h2 {
 /* Responsive Design */
 @media (max-width: 768px) {
   .container {
-      flex-direction: column;
-      width: 90%;
+    display: flex;
+    width: 80%;
+    max-width: 900px;
+    min-width: 320px; /* Prevents extreme shrinking */
   }
 
   .left, .right {
@@ -284,12 +286,13 @@ input, select {
 }
 @media (max-width: 768px) {
   .form-box {
-      width: 100%; /* Use full width on smaller screens */
-      padding: 15px;
-  }
-
-  .radio-group {
-      flex-direction: column; /* Stack radios on small screens */
-      align-items: flex-start;
-  }
+    width: 90%;
+    max-width: 800px;
+    min-width: 320px; /* Ensures usability on small screens */
+}
+.radio-group {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap; /* Prevents overflow on small screens */
+}
 }

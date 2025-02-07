@@ -14,6 +14,20 @@
             height: 100vh; /* Full height of viewport */
             background-color: #1e2a47; /* Dark blue background */
             margin: 0;
+            h1 {
+                font-size: 2rem; /* Adjust size if needed */
+                text-align: center;
+                white-space: nowrap; /* Prevents text from wrapping */
+                overflow: hidden;
+                text-overflow: ellipsis; /* Adds '...' if text overflows */
+            }
+            .form-container {
+                min-width: 400px; /* Prevents shrinking too much */
+                max-width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
         }
         /* Center the form container */
 .container {
@@ -77,7 +91,8 @@
     </style>
     
     <div class="container">
-        <div class="form-container, right">
+        <div class="form-container right">
+
             <h1>Sign Up</h1>
             <p>Create an account to get started</p>
             <form>
@@ -119,22 +134,25 @@
                 <label for="dob">Date of Birth</label>
                 <input type="date" id="dob" required> <br><br>
 
-                <label for="dobnumber">Birth Registration Number</label>
-                <input type="text" id="dobnumb" required> <br><br>
+                <label for="dobnumb">Birth Registration Number</label>
+                <input type="text" id="dobnumb" required>
+
 
                 <label>Preferred Device</label><br><br>
-                <div class="radio-group">
-                    <label><input type="radio" name="mobile" value="mobile">Mobile</label>
-                    <label><input type="radio" name="messenger" value="messenger">Laptop </label>
-                    <label><input type="radio" name="discord" value="discord">Discord </label>
+                <div class="radio-group" >
+                    <label><input type="radio" name="device" value="mobile">Mobile</label >
+                    <label><input type="radio" name="device" value="laptop">Laptop</label>
+                    <label><input type="radio" name="device" value="discord">Discord</label>
+
                 </div> <br><br>
 
 
                 <label>Preferred Medium Of Communication</label><br><br>
                 <div class="radio-group">
-                    <label><input type="radio" name="whatsapp" value="whatsapp">Whatsapp</label>
-                    <label><input type="radio" name="messenger" value="messenger">Messenger </label>
-                    <label><input type="radio" name="discord" value="discord">Discord </label>
+                    <label><input type="radio" name="communication" value="whatsapp">Whatsapp</label>
+                    <label><input type="radio" name="communication" value="messenger">Messenger</label>
+                    <label><input type="radio" name="communication" value="discord">Discord</label>
+
                 </div> <br><br>
                 
                 <label for="address">Present Address</label>
